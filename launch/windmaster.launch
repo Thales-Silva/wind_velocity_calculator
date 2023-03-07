@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <include file="$(find windmaster_anemometer)/launch/windmaster_anemometer.launch">
+        <arg name="required" value="true"/>
+    </include>
+
+    <include file="$(find wind_velocity_calculator)/launch/wind_velocity_calculator.launch"/>
+</launch>

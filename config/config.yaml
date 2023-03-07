@@ -1,0 +1,30 @@
+# GPS signal health is between 0 and 5, 5 is the best condition.
+gps_health_topic: "/dji_sdk/gps_health"
+
+# Drone velocity input topic geometry_msgs/Vector3Stamped
+drone_linear_velocity_topic: "/dji_sdk/velocity"
+
+# Drone angular velocity input topic geometry_msgs/Vector3Stamped
+drone_angular_velocity_topic: "/dji_sdk/angular_velocity_fused"
+
+# Drone orientation input topic geometry_msgs/QuaternionStamped
+drone_orientation_topic: "/dji_sdk/attitude"
+
+# Anemometer input topic geometry_msgs/Vector3Stamped
+anemometer_relative_velocity_topic: "/windmaster_readings"
+
+# Output topic geometry_msgs/Vector3Stamped
+wind_velocity_topic: "/wind_velocity"
+
+# Vehicle base_link name in the tf tree
+vehicle_base_link: "/drone_base_link"
+
+# Measurement link name in the tf tree
+measurement_link: "/anemometer_base_link"
+
+## Only used if tf from measurement_link to vehicle_base_link isn't found.
+# std_vector<double> [x-y-z]
+anemometer_position: [0.0,0.0,1.0]
+
+# std_vector<double> [z-y-x]
+anemometer_orientation: [0.0,0.0,0.0]

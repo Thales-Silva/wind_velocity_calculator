@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <node name="wind_velocity_calculator"
+          pkg="wind_velocity_calculator"
+          type="wind_velocity_calculator_node"
+          output="screen">
+        <rosparam command="load" file="$(find wind_velocity_calculator)/config/config.yaml"/>
+    </node>
+</launch>
